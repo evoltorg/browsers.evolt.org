@@ -1,0 +1,25 @@
+<Files> 
+	<FileGroup Name="Images">
+		<Extensions HandlerMethod="Image">jpg,jpe,jpeg,gif,bmp,png</Extensions>
+		<Extensions HandlerMethod="HyperLink">tiff,tif,psd,eps,ep</Extensions>
+	</FileGroup>
+	<FileGroup Name="Audio">
+		<Extensions HandlerMethod="Embed">mp3,mid,wav</Extensions>
+	</FileGroup>
+	<FileGroup Name="Video">
+		<Extensions HandlerMethod="Embed">mpg,mpeg,mpe,avi,wmv,mov,asf</Extensions>
+		<Extensions HandlerMethod="EmbedQuicktime">mov</Extensions>
+		<Extensions HandlerMethod="EmbedFlash">swf</Extensions>
+	</FileGroup>
+	<FileGroup Name="Web Documents">
+		<Extensions HandlerMethod="IFrame">xml,htm,html,php</Extensions>
+		<Extensions HandlerMethod="TextArea">css</Extensions>
+	</FileGroup>
+	<FileGroup Name="Documents">
+		<Extensions HandlerMethod="IFrame">txt</Extensions>
+		<Extensions HandlerMethod="HyperLink">doc,rtf,pdf</Extensions>
+	</FileGroup>
+	<FileGroup Name="Assorted Files">
+		<Extensions HandlerMethod="HyperLink">*</Extensions>
+	</FileGroup>
+</Files>

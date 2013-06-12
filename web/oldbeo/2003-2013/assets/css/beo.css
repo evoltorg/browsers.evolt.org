@@ -1,0 +1,20 @@
+body { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 400; }
+body:strong { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 600; }
+body.footer, .footer { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 300; }
+p { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 400; }
+p:strong { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 600; }
+h1 { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 600; }
+h1:strong { font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 800; }
+tt { font-family: "Inconsolata"; }
+
+/* a { color: black; }
+a.episode { color: gray; }
+a:visited { color: black; }
+a.episode:visited { color: gray; } */
+
+.modal {
+  margin: -300px 0 0 -280px;
+};
+
+/* img.hidden { display: none; }; */
+

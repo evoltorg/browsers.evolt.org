@@ -1,0 +1,39 @@
+#!/bin/bash
+
+cd /local/web/hosts/archive.browsers.evolt.org
+
+echo "<?php" > /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n "\$archivesize = " >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n `du -schm /local/web/hosts/archive.browsers.evolt.org/ | head -1 | cut -d"/" -f1` >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo ";" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n "\$archivelastupdated = \"" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n `find -type d -printf "%TY-%Tm-%Td %TH:%TM:%TS %TZ\n" | sort -r | head -1` >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n `find -type d -printf "%TY-%Tm-%Td %TH:%TM:%TS %TZ\n" | sort -r | head -1` > lastupdated.txt
+echo "\";" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo "?>" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+
+# echo `ls -1 | grep -v robots.txt | grep -v lastupdated.txt | grep -v index.html | wc -l` > /local/web/hosts/browsers.evolt.org/archivecount.inc
+
+cd /local/web/hosts/browsers.evolt.org/mirrors
+
+echo 200 > checks/master-http.status
+cat /local/web/hosts/archive.browsers.evolt.org/lastupdated.txt > checks/master-http.inc
+
+for MIRRORSITE in sites/* 
+do
+	CHECKSITEINC=checks/`basename $MIRRORSITE`-http.inc
+	CHECKSITESTAT=checks/`basename $MIRRORSITE`-http.status
+	if [ -r $MIRRORSITE/disable ]
+	then
+		echo "Mirror disabled" > $CHECKSITEINC
+	else
+		CHECKURL="`cat $MIRRORSITE/http`"
+		curl --silent --max-time 10 --connect-timeout 10 --head "$CHECKURL/lastupdated.txt" > $CHECKSITESTAT
+		if [ "`grep 404 $CHECKSITESTAT | grep HTTP`" = "" ] 
+		then
+			curl --silent --max-time 10 --connect-timeout 10 "$CHECKURL/lastupdated.txt" > $CHECKSITEINC
+		else
+			echo "Data unavailable" > $CHECKSITEINC
+		fi
+	fi
+done

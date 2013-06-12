@@ -1,0 +1,199 @@
+
+.donationHeader {
+  background-color: #c00000;
+  color: #000000;
+  font-size: 11px;
+}
+
+.donationHeader div {
+  background-color: #3c452c;
+  color: #c8cfc6;
+  font-size: 11px;
+}
+
+.donationHeader a:link, .donationHeader a:visited, .donationHeader a:hover, .don
+ationHeader a:active {
+  color: #FFCCCC;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.donationHeaderChartBG {
+  background-color: #9aa486;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.donationHeaderChartFG {
+  background-color: #ffffff;
+  color: #9aa486;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+
+body		{	background : #384F5C ;					/* BodyBackgroundColor , BodyBackgroundImage */
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* BodyTextFace */
+			font-size : 12px ; 					/* BodyTextSize (include units) */
+			line-height : 130% ;					/* BodyTextLeading (as %) */
+			/*margin-top : 3% ;*/					/* BodyVerticalMargin (include units) */
+			/*margin-bottom : 3% ;*/					/* BodyVerticalMargin (include units) */
+			/*margin-left : 5% ;*/					/* BodyHorizontalMargin (include units) */
+			/*margin-right : 5% ;*/ }					/* BodyHorizontalMargin (include units) */
+
+input, select, textarea { 
+    			font-family : Arial, Helvetica, sans-serif ; 		/* FormTextFace */
+			font-size : 11px ;					/* FormTextSize (include units) */
+			margin-top : 3px ;					/* FormVerticalMargin (include units) */
+			margin-bottom : 3px ;					/* FormVerticalMargin (include units) */
+			background : #ffffff ;					/* FormBGColor */
+			color : #000000 ; }					/* FormTextColor */
+
+td, th, tfoot	{    	font-family : Verdana, Arial, Helvetica, sans-serif ;	/* as BodyTextFace */
+			font-size : 12px ;					/* as BodyTextSize (include units) */
+			color : #333333 ; }					/* PrimaryTextColor */
+
+/* td.content	{	line-height : 130% ; } */				/* as BodyTextLeading (as %) */
+
+strong.title	{	font-weight : bold ;					/* -- */
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* as BodyTextFace */
+			font-size : 15px ; }					/* as H3TextSize (include units) */
+
+b, strong	{	font-weight : bold ; }					/* -- */
+
+cite		{	font-style : normal ; }					/* -- */
+
+i, em		{	font-style : italic ; }					/* -- */
+
+u		{	text-decoration : underline ; }				/* -- */
+
+hr		{	color : #000000 ;					/* HRColor */
+			height : 1px ; }					/* -- */
+
+h1		{	font-family : Arial, Helvetica, sans-serif ;		/* H1TextFace */
+			font-size : 20px ;					/* H1TextSize (include units) */
+			margin-bottom : 5px ; }					/* as 1/4 H1TextSize */
+
+h2		{	font-family : Arial, Helvetica, sans-serif ;		/* H2TextFace */
+			font-size : 17px ; }					/* H2TextSize (include units) */
+
+h3		{	font-family : Arial, Helvetica, sans-serif ;		/* H3TextFace */
+			font-size : 15px ; }					/* H3TextSize (include units) */
+
+h3.title	{	font-weight : bold ;					/* -- */
+			font-size : 15px ; 					/* as H3TextSize (include units) */
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* as BodyTextFace */
+			margin-top : 0px ; 					/* -- */
+			margin-bottom : 3px ; }					/* as 1/5 H3TextSize (include units) */
+
+h4		{	font-family : Arial, Helvetica, sans-serif ;		/* H4TextFace */
+			font-size : 13px ; }					/* H4TextSize (include units) */
+
+h5		{	font-family : Arial, Helvetica, sans-serif ;		/* H5TextFace */
+			font-size : 13px ; 					/* as H4TextSize (include units) */
+			margin-left : 10px ; }                                   /* H5MarginIndent */
+
+h6		{	font-family : Arial, Helvetica, sans-serif ;		/* H6TextFace */
+			font-size : 13px ; 					/* as H4TextSize (include units) */
+			margin-left : 20px ; }                                   /* H6MarginIndent */
+
+code		{	font-family : Courier, "Courier New", fixed-width ;	/* CodeTextFace */
+			font-size : 10px ;					/* CodeTextSize (include units) */
+			color : #333333 ; }					/* CodeTextColor */
+
+pre		{	font-family : Courier, "Courier New", fixed-width ;	/* as CodeTextFace */
+			font-size : 10px ;					/* as CodeTextSize (include units) */
+			color : #333333 ;					/* as CodeTextColor */
+			line-height : 140% ; }					/* CodeTextLeading */
+
+.code		{	background-color : #C8CFC6 ;				/* as MainBGColor */
+			font-family : Courier, "Courier New", fixed-width ;	/* as CodeTextFace */
+			font-size : 10px ;					/* as CodeTextSize (include units) */
+			color : #333333 ; }					/* as CodeTextColor */
+
+.comment	{	font-family : Courier, "Courier New", fixed-width ;	/* as CodeTextFace */
+			font-size : 10px ;					/* as CodeTextSize (include units) */
+			background : #ffffff ;					/* FormBGColor */
+			color : #000000 ; }					/* FormTextColor */
+
+.error          {       font-size : 10px;                                       /* ErrorTextSize (include units) */
+                        color : #cc3333;                                        /* ErrorTextColor */
+                        background : #c8cfc6; }                                 /* ErrorBGColor */
+
+.smalltext	{	font-size : 10px ; }					/* SmallTextSize (include units) */
+
+.main		{	background-color : #C6C8CF ;				/* MainBGColor */
+			line-height : 130% ; }					/* as BodyTextLeading (as %) */
+
+.border		{	background : #869AA4 ;					/* as SidebarBGColor */
+			border-left : 1px solid #000000 ; }			/* -- */
+
+.side		{	background : #869AA4 ;					/* SidebarBGColor */
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* SidebarTextFace */
+			font-size : 11px ;					/* SidebarTextSize (include units) */
+			line-height : 120% ;					/* SidebarTextLeading (as %) */
+			color : #D4D5DB ; }					/* SidebarTextColor */
+
+.blackBorder	{	border : 1px solid #000000 ; }				/* -- */
+
+.blackSides	{	border-left : 1px solid #000000 ;			/* -- */
+			border-right : 1px solid #000000 ; }			/* -- */
+
+.pageTitle1	{	background-color : #D4D5DB;				/* PageTitleBGColor */
+			color : #869AA4 ; }					/* as SidebarBGColor */
+
+.pageTitle2	{	background-color : #C6C8CF ;				/* as MainBGColor */
+			color : #869AA4 ; }					/* as SidebarBGColor */
+
+.footer		{	background-color : #000000 ;				/* -- */
+			color : #ffffff ; }					/* -- */
+
+a:link		{	text-decoration : underline ;				/* -- */
+			color : #000000 ; }					/* ContentLinkUnvisitedColor */
+
+a:visited	{	text-decoration : underline ; 				/* -- */
+			color : #666666 ; }					/* ContentLinkVisitedColor */
+
+a:hover		{	text-decoration : underline ; 				/* -- */
+			color : #000000 ; }					/* ContentLinkHoverColor */
+
+a.sidebar:link	{	text-decoration : none ; 				/* -- */
+			color : #333333 ; }					/* SidebarLinkUnvisitedColor */
+
+a.sidebar:visited {	text-decoration : none ; 				/* -- */
+			color : #666666 ; }					/* SidebarLinkVisitedColor */
+
+a.sidebar:hover	{	text-decoration : underline ; 				/* -- */
+			color : #000000 ; }					/* SidebarLinkHoverColor */
+
+.tabtextnav	{	color : #000000 ; }					/* TabTextStatic (text nav above black bar, pipes only) */
+
+a.tabtextnav:link {	text-decoration : none ; 				/* -- */
+			font-size : 11px ;					/* TabLinkFontSize */
+			color : #C6C8CF ; }					/* as MainBGColor */
+
+a.tabtextnav:visited {	text-decoration : none ; 				/* -- */
+			font-size : 11px ;					/* TabLinkFontSize */
+			color : #C6C8CF ; }					/* as MainBGColor */
+
+a.tabtextnav:hover {	text-decoration : underline ; 				/* -- */
+			font-size : 11px ;					/* TabLinkFontSize */
+			color : #C6C8CF ; }					/* as MainBGColor */
+
+a.title:link	{	text-decoration : none ;				/* -- */
+			font-weight : bold ;					
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* as BodyTextFace */
+			font-size : 15px ; }					/* as H3TextSize (include units) */
+
+a.title:visited	{	text-decoration : none ;				/* HomePageArticleTitleLink */
+			font-weight : bold ;					/*
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* as BodyTextFace */
+			font-size : 15px ; 
+			color : #666666 ; }					/* as H3TextSize (include units) */
+
+a.title:hover	{	text-decoration : underline ;
+			font-weight : bold ;					/* -- */
+			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* as BodyTextFace */
+			font-size : 15px ; }					/* as H3TextSize (include units) */
