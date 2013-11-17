@@ -14,7 +14,7 @@
 				<p>Mailing list discussions. Legacy browsers for testing. An article archive spanning 15 years. Join one of the world's longest-running web design communities.</p>
 			</div>
 			<div class="slide-image">
-				<img src="/front/assets/images/slide-image-4.png" alt="" />
+				<img src="/assets/images/slide-image-4.png" alt="" />
 			</div>
 		</div>
 		<div class="slide-back">
@@ -29,7 +29,7 @@
 				<p>An exodus of members of the WIRED MonkeyJunkies web development community leads to the formation of <strong>evolt.org</strong>.</p>
 			</div>
 			<div class="slide-image">
-				<img src="/front/assets/img/slides-1998-evolt-alpha.png" alt="" />
+				<img src="/assets/img/slides-1998-evolt-alpha.png" alt="" />
 			</div>
 		</div>
 		<div class="slide-back">
@@ -44,7 +44,7 @@
 				<p><strong>evolt.org</strong> becomes more than a mailing list, building a site to hold articles written by community members.</p>
 			</div>
 			<div class="slide-image">
-				<img src="/front/assets/img/slides-1999-evolt-onepointoh.png" alt="" />
+				<img src="/assets/img/slides-1999-evolt-onepointoh.png" alt="" />
 			</div>
 		</div>
 		<div class="slide-back">
@@ -59,7 +59,7 @@
 				<p>The site is upgraded again, with a new design reflecting improvements in HTML and CSS.</p>
 			</div>
 			<div class="slide-image">
-				<img src="/front/assets/img/slides-2000-evolt-twopointoh.png" alt="" />
+				<img src="/assets/img/slides-2000-evolt-twopointoh.png" alt="" />
 			</div>
 		</div>
 		<div class="slide-back">
@@ -74,7 +74,7 @@
 				<p><strong>evolt.org</strong> three-point-oh: a new foundation built upon an industrial-grade CMS, and modern web standards.</p>
 			</div>
 			<div class="slide-image">
-				<img src="/front/assets/img/slides-2005-evolt-threepointoh.png" alt="" />
+				<img src="/assets/img/slides-2005-evolt-threepointoh.png" alt="" />
 			</div>
 		</div>
 		<div class="slide-back">

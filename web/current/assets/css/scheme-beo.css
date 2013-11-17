@@ -8,9 +8,9 @@ input[type=submit], input[type=button], button, .button { background-color: #95B
 
 /* HEADER
 --------------------------------------------------------- */
-#header, #content-header { background-color: #4F5C38; }   /* blue */
-#content-header h1 { background: #4F5C38; }   /* blue */
-#header nav ul.sub-menu li a:hover { color: #A0AE88; }  /* light blue */
+#header, #content-header { background-color: #384F5C; }   /* beo blue */
+#content-header h1 { background: #384F5C; }   /* beo blue */
+#header nav ul.sub-menu li a:hover { color: #869AA4; }  /* beo light blue */
 
 /* CONTENT
 --------------------------------------------------------- */

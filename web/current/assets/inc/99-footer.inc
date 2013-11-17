@@ -38,14 +38,14 @@
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="/front/assets/js/jquery.easing.js"></script>
-<script src="/front/assets/js/jquery.cycle.all.js"></script>
-<script src="/front/assets/js/jquery.carousel.min.js"></script>
-<script src="/front/assets/js/jquery.isotope.min.js"></script>
-<script src="/front/assets/js/jquery.mixitup.min.js"></script>
-<script src="/front/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="/front/assets/js/jquery.mobilemenu.js"></script>
-<script src="/front/assets/js/scripts.js"></script>
+<script src="/assets/js/jquery.easing.js"></script>
+<script src="/assets/js/jquery.cycle.all.js"></script>
+<script src="/assets/js/jquery.carousel.min.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/jquery.mixitup.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/jquery.mobilemenu.js"></script>
+<script src="/assets/js/scripts.js"></script>
 <script>
 jQuery(window).load(function() {
 	// init Cycle for slider
