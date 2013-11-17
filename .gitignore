@@ -1,10 +1,10 @@
 .DS_Store
 archive/*
 logs
-web/oldbeo/1999-2003/beodl/mirrors*.csv
-web/oldbeo/2003-2013/mirrors
-web/oldbeo/2003-2013/beodl/mirrors*.csv
-web/oldbeo/2003-2013/tmp
+web/1999-2003/beodl/mirrors*.csv
+web/2003-2013/mirrors
+web/2003-2013/beodl/mirrors*.csv
+web/2003-2013/tmp
 *.swp
 ~$*
 *~

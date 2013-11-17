@@ -1,0 +1,20 @@
+/* Classis color scheme - blue for header and links, green for buttons
+--------------------------------------------------------- */
+
+/* BODY DEFAULTS
+--------------------------------------------------------- */
+a { color: #0069A4;  }   /* blue */
+input[type=submit], input[type=button], button, .button { background-color: #95B83F; }  /* green */
+
+/* HEADER
+--------------------------------------------------------- */
+#header, #content-header { background-color: #16ABE3; }   /* blue */
+#content-header h1 { background: #16ABE3; }   /* blue */
+#header nav ul.sub-menu li a:hover { color: #50d5f5; }  /* light blue */
+
+/* CONTENT
+--------------------------------------------------------- */
+#content .pricing th.heading { background-color: #0090EC; } /* blue */
+content .pricing table.highlighted th.heading { background-color: #005D99; } /* dark blue */
+ul.tags li a.active { background: #95B83F; border-color: #95B83F; }  /* green */
+#menu-portfolio-items ul.tags li a.active { background: #95B83F; }  /* green */
