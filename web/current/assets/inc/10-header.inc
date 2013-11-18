@@ -43,10 +43,11 @@
 				<li><a href="http://leo.wpa.io/">Lists</a></li>
 			</ul>
 			</nav>
-			<h1 id="logo"><a href="http://evoltorg.github.io/" rel="home" title=""><img src="assets/img/evoltlogo.png" alt="" /></a></h1>
+			<h1 id="logo"><a href="http://evoltorg.github.io/" rel="home" title=""><img src="assets/img/top-evoltlogo.png" alt="" /></a></h1>
 			<div id="address-block">
 				<ul>
 					<li class="smaller-gap"><a href="http://twitter.com/evolt_org" title="Twitter"><i class="icon-twitter"></i></a></li>
+					<li class="smaller-gap"><a href="http://www.linkedin.com/groups?gid=1019497" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
 					<li class="smaller-gap"><a href="http://github.com/evoltorg" title="GitHub"><i class="icon-github"></i></a></li>
 					<li class="smaller-gap"><a href="http://www.flickr.com/groups/evolters/" title="Flickr"><i class="icon-flickr"></i></a></li>
 				</ul>

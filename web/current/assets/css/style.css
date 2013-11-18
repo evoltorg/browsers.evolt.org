@@ -104,7 +104,7 @@ h4 { font-weight: bold; font-size: 1.0em; margin: 0 0 10px 0; line-height: 1.4; 
 #header nav ul li { display: inline-block; padding: 0; position: relative; padding: 0 40px 20px 0; }
 #header nav ul li a { color: #fff; font-size: 1.1em; font-weight: bold; text-transform: uppercase; padding: 20px 0 10px 0; }
 #header nav > ul > li > a.active { border-bottom: 2px solid white; }
-#header nav > ul > li > a:hover, #header nav > ul > li > a.active-parent, #address-block ul > li > a:hover { color: #ccc; border-color: transparent; }
+#header nav > ul > li > a:hover, #header nav > ul > li > a.active-parent, #address-block ul > li > a:hover { color: #ccc; border-color: transparent; padding-bottom: 30px; }
 
 #header nav ul.sub-menu { display: none; position: absolute; top: 20px; left: 0px; margin-top: 10px; z-index: 999; }
 #header nav ul.sub-menu:before { content: ""; display: block; width:0; height:0; border-bottom: 5px solid rgba(0,0,0,0.8); border-left: 5px solid transparent; border-right: 5px solid transparent; margin: 10px 0 0 20px; position: relative; top: 0px;  }
@@ -120,7 +120,7 @@ h4 { font-weight: bold; font-size: 1.0em; margin: 0 0 10px 0; line-height: 1.4; 
  
 #header nav .sexyselect { display: none; margin: 65px auto 15px auto;  }
 
-#header #sticks-to-top { position: static; background: none; border: 0; width: 100%; }
+#header #sticks-to-top { position: static; background: none; border: 0; width: 100%; z-index: 200; }
 #header.fixed-header #sticks-to-top { position: fixed; top: -45px; height: 100px; z-index: 300; background: #EAEBEB url('../images/backbg.png'); border-bottom: 1px solid #AAAAAB; box-shadow: inset 0 -20px 40px rgba(0,0,0,0.05); 
 -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 #header.fixed-header #sticks-to-top h1#logo img { height: 40px; margin-top: 30px; }
@@ -549,6 +549,7 @@ ______________________________________ */
 	.laptops .gallery-item { width: 33.3%; }
 	.laptops .gallery-item img { margin-left: 76px; }
 	.photoalbums .gallery-item { width: 22.7%; }
+	.photoalbums .gallery-item:nth-child(4n-7) { clear: both; }
 	
 	.sneakpeak-next { right: -3%; }
 	.sneakpeak-prev { left: -3%; }
@@ -610,7 +611,8 @@ ______________________________________ */
 	ul li.piece { margin-left: 15px; }
 	
 	.laptops .gallery-item img { margin-left: 69px; }
-	.photoalbums .gallery-item { width: 31%; }
+	.photoalbums .gallery-item { width: 31%; clear: none }
+	.photoalbums .gallery-item:nth-child(4n-7) { clear: none; }
 
 	#content .entry-content, #content .entry-summary { float: none; width: 95%; }
 	#content .entry-byline { float: none; width: 100%; }

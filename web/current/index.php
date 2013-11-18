@@ -8,6 +8,7 @@ include "assets/inc/10-header.inc";
 include "assets/inc/20-message.inc";
 ?>
 
+<p class="notice"><strong>Notice</strong> - Your message! </p>
 
 <?
 include "assets/inc/99-footer.inc";
