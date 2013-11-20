@@ -1,0 +1,10 @@
+<?php
+// browserarchive.org aka browsers.evolt.org
+// Copyright (c) 1999-2013 Adrian Roselli, William Anderson
+?>
+<header id="content-header">
+    <div class="wrapper">
+            <h1><?php echo $page_title ?></h1>
+            <p itemscope itemtype="http://data-vocabulary.org/Breadcrumb" id="breadcrumbs"><a href="/" rel="home" itemprop="url"><span itemprop="title">evolt.org</span></a> <span class="divider">&gt;</span> <?php echo $short_title ?></p>
+    </div>
+</header>

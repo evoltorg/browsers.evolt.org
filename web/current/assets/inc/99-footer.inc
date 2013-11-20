@@ -2,45 +2,26 @@
 // browserarchive.org aka browsers.evolt.org
 // Copyright (c) 1999-2013 Adrian Roselli, William Anderson
 ?>
-</section>
 
 <a id="back-to-top" href="#" title="Back to top"><i class="icon-angle-up"></i></a>
 
 <footer id="footer" role="contentinfo">
 <div class="wrapper">
-	<div class="top">
-		<h3>This is the end of the page</h3>
-	</div>
-	<div class="widgets">
-		<div class="footerbox">
-			<h3>Widget 1</h3>
-			<p>This is a widget box</p>
-		</div>
-		<div class="footerbox">
-			<h3>Widget 2</h3>
-			<p>This is a widget box</p>
-		</div>
-		<div class="footerbox">
-			<h3>Widget 3</h3>
-			<p>This is a widget box</p>
-		</div>
-		<div class="footerbox">
-			<h3>Widget 4</h3>
-			<p>This is a widget box</p>
-		</div>
-		<br class="clear" />
-	</div>
-	<div class="bottom">
-		<p class="left">evolt.org is a world community for web developers, promoting the mutual free exchange of ideas, skills and experiences</p>
-		<p class="right">Founded 1998</p>
-	</div>
+    <div class="p100">
+        <div class="p10"><img src="/assets/img/small-evoltlogo.png" height="32" width="32" alt="" /></div>
+        <div class="p90">
+            <p class="left"><strong>Workers of the Web, Unite!</strong><br />
+            Founded in 1998, evolt.org is a world community for web developers, promoting the mutual free exchange of ideas, skills and experiences</p>
+        </div>
+        <br class="clear" />
+    </div>
 </div>
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="/assets/js/jquery.easing.js"></script>
 <script src="/assets/js/jquery.cycle.all.js"></script>
-<script src="/assets/js/jquery.carousel.min.js"></script>
+<script src="/assets/js/jquery.jcarousel.min.js"></script>
 <script src="/assets/js/jquery.isotope.min.js"></script>
 <script src="/assets/js/jquery.mixitup.min.js"></script>
 <script src="/assets/js/jquery.magnific-popup.min.js"></script>
