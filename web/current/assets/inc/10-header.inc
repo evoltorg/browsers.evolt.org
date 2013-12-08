@@ -15,12 +15,13 @@
 	<meta name="keywords" content="web, internet, design, technology, interface, multimedia, script, commentary, hardware, software, articles, news, history, browsers, archive" />
 	<meta name="description" content="A world community for web developers, evolt.org promotes the mutual free exchange of ideas, skills and experiences." />
 	<link rel="shortcut icon" href="/favicon.ico" />
+	<link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/assets/css/magnificpopup.css" media="screen" />
 	<link rel="stylesheet" href="/assets/css/font-awesome.min.css" media="screen" />
 	<link rel="stylesheet" href="/assets/css/style.css" media="screen" />
 	<link rel="stylesheet" href="/assets/css/scheme-beo.css" media="screen" />
-	<title><?php echo $page_title ?><?php if ( $page_title != $site_name ) { ?> | browsers.evolt.org<?php } ?></title>
+	<title><?php echo $html_title ?><?php if ( $html_title != $site_name ) { ?> | browsers.evolt.org<?php } ?></title>
 	<!-- IE fixes -->
 	<!-- [if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

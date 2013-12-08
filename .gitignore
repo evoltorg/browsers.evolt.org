@@ -5,6 +5,8 @@ web/1999-2003/beodl/mirrors*.csv
 web/2003-2013/mirrors
 web/2003-2013/beodl/mirrors*.csv
 web/2003-2013/tmp
+web/current/mirrors
+web/current/old
 *.swp
 ~$*
 *~
