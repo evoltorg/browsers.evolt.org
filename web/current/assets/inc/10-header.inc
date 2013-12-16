@@ -38,16 +38,16 @@
 		<div class="wrapper">
 			<nav id="mainmenu" role="navigation">
 			<ul>
-				<li><a href="http://evoltorg.github.io/"<?php if ( $site_name == "evolt.org" ) { ?> class="active"<?php } ?>>evolt.org</a></li>
-				<li><a href="http://evoltorg.github.io/archive.html">Articles</a></li>
+				<li><a href="http://evolt.org/"<?php if ( $site_name == "evolt.org" ) { ?> class="active"<?php } ?>>evolt.org</a></li>
+				<li><a href="http://evolt.org/archive.html">Articles</a></li>
 				<li><a href="/"<?php if ( $site_name == "browsers.evolt.org" ) { ?> class="active"<?php } ?>>Browsers</a></li>
-				<li><a href="http://leo.wpa.io/"<?php if ( $site_name == "lists.evolt.org" ) { ?> class="active"<?php } ?>>Lists</a></li>
+				<li><a href="http://lists.evolt.org/"<?php if ( $site_name == "lists.evolt.org" ) { ?> class="active"<?php } ?>>Lists</a></li>
 			</ul>
 			</nav>
-			<h1 id="logo"><a href="http://evoltorg.github.io/" rel="home" title=""><img src="assets/img/top-evoltlogo.png" alt="" /></a></h1>
+			<h1 id="logo"><a href="http://evolt.org/" rel="home" title=""><img src="/assets/img/top-evoltlogo.png" alt="" /></a></h1>
 			<div id="address-block">
 				<ul>
-					<li><a href="http://evoltorg.github.io/colophon.html">Colophon</a></li>
+					<li><a href="http://evolt.org/colophon.html">Colophon</a></li>
 					<li class="smaller-gap"><a href="http://twitter.com/evolt_org" title="Twitter"><i class="icon-twitter"></i></a></li>
 					<li class="smaller-gap"><a href="https://plus.google.com/u/0/communities/114796678588081931900" title="Google+"><i class="icon-google-plus"></i></a></li>
 					<li class="smaller-gap"><a href="http://www.linkedin.com/groups?gid=1019497" title="LinkedIn"><i class="icon-linkedin"></i></a></li>

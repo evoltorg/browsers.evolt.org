@@ -1,0 +1,4 @@
+# DirectoryIndex index.php index.html /_h5ai/server/php/index.php
+# RewriteEngine on
+# RewriteRule ^/browsers/(.*)$ /archive.php?file=/$1 [L,QSA]
+# RewriteRule ^/archive/(.*)$ /download.php?file=/$1 [L,QSA]

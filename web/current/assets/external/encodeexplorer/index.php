@@ -2533,7 +2533,7 @@ class EncodeExplorer
 	
 	function makeLink($switchVersion, $logout, $sort_by, $sort_as, $delete, $dir)
 	{
-		$link = "?";
+		$link = "";
 		if($switchVersion == true && EncodeExplorer::getConfig("mobile_enabled") == true)
 		{
 			if($this->mobile == false)
@@ -2561,7 +2561,7 @@ class EncodeExplorer
 		if($sort_as != null && strlen($sort_as) > 0)
 			$link .= "sort_as=".$sort_as."&amp;";
 		
-		$link .= "dir=".$dir;
+		$link .= "/browsers/".$dir;
 		if($delete != null)
 			$link .= "&amp;del=".$delete;
 		return $link;

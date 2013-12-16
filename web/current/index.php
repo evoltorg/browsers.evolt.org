@@ -1,8 +1,11 @@
 <?php
 // browserarchive.org aka browsers.evolt.org
 // Copyright (c) 1999-2013 Adrian Roselli, William Anderson
-?>
-<?php
+
+if ( $_GET['dir'] != "" ) { 
+	header("Location: /browsers/".$_GET['dir'],301);
+	exit;
+}
 include "assets/inc/00-functions.inc";
 include "data.inc";
 $site_name = "browsers.evolt.org";
@@ -15,9 +18,9 @@ include "assets/inc/20-message.inc";
 <div class="wrapper">
     <section id="content" class="full-width" role="main">
     	<div class="p100">
-			<p class="notice error"><strong>Pardon our dust!</strong> This iteration of <strong>evolt.org</strong> is under alpha test, containing content which has not yet been finalized.</p>
+			<p class="notice error"><strong>Pardon our dust!</strong> This iteration of <strong>browsers.evolt.org</strong> is under test, containing content which has not yet been finalized.</p>
 		</div>
-		<div class="p100">
+		<div class="p66">
 			<h2>evolt.org Browser Archive</h2>
 <h2>Who archived all these?</h2>
 <p>One of the founding members of evolt.org,
@@ -40,19 +43,20 @@ staff can download the software into the master archive.
 <p><small>Note that updates to the Archive may take ~ 24-48 hours to reach mirror sites.</small></p>
 
 <h2>And so, to the Archive ...</h2>
-<p>A</p>
+<!-- <p>A</p> -->
 <ul>
-	<li style="list-style-image: url(/assets/img/uas-agent/1x.png)">1x</li>
-	<li style="list-style-image: url(/assets/img/uas-agent/msie.png)"><a href="archive.php?dir=archive/ie">Microsoft Internet Explorer</a></li>
+<!--	<li style="list-style-image: url(/assets/img/uas-agent/1x.png)">1x</li>
+	<li style="list-style-image: url(/assets/img/uas-agent/msie.png)"><a href="/browsers/archive/ie">Microsoft Internet Explorer</a></li> -->
 <?php
 	foreach ($browsers as &$browser) {
 ?>
-	<li><a href="archive.php?dir=archive/<?php echo $browser['code'] ?>"><?php echo $browser['name'] ?></a></li>
+	<li><a href="/browsers/archive/<?php echo $browser['code'] ?>"><?php echo $browser['name'] ?></a> &mdash; <?php echo $browser['vendor'] ?></li>
 <?
 	}
 ?>
 </ul>
 		</div>
+		<?php include "assets/inc/30-adsense.inc" ?>
 	</section>
 </div>
 <?
