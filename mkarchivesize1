@@ -1,0 +1,159 @@
+#!/bin/sh
+
+cd /local/web/hosts/archive.browsers.evolt.org/
+
+echo "<?php" > /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n "\$archivesize = " >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n `du -schm /local/web/hosts/archive.browsers.evolt.org/ | head -1 | cut -d"/" -f1` >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo ";" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n "\$archivelastupdated = \"" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n `find -type d -printf "%TY-%Tm-%Td %TH:%TM:%TS %TZ\n" | sort -r | head -1` >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo -n `find -type d -printf "%TY-%Tm-%Td %TH:%TM:%TS %TZ\n" | sort -r | head -1` > lastupdated.txt
+echo "\";" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+echo "?>" >> /local/web/hosts/browsers.evolt.org/archivesize.inc
+
+echo `ls -1 | grep -v robots.txt | grep -v lastupdated.txt | grep -v index.html | wc -l` > /local/web/hosts/browsers.evolt.org/archivecount.inc
+
+cd /local/web/hosts/browsers.evolt.org/mirrors
+
+echo 200 > checks/master-http.status
+cat /local/web/hosts/archive.browsers.evolt.org/lastupdated.txt > checks/master-http.inc
+
+if [ -r sites/planetmirror.com/disable ] 
+then
+	echo "Mirror disabled" > checks/planetmirror.com-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://public.planetmirror.com/pub/browsers/lastupdated.txt > checks/planetmirror.com-http.status
+	if [ "`grep 404 checks/planetmirror.com-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://public.planetmirror.com/pub/browsers/lastupdated.txt > checks/planetmirror.com-http.inc
+	else
+		echo "Data unavailable" > checks/planetmirror.com-http.inc
+	fi
+fi
+
+if [ -r sites/flirble.org/disable ] 
+then
+	echo "Mirror disabled" > checks/flirble-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://uk.evolt.m.flirble.org/lastupdated.txt > checks/flirble-http.status
+	if [ "`grep 404 checks/flirble-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://uk.evolt.m.flirble.org/lastupdated.txt > checks/flirble-http.inc
+	else
+		echo "Data unavailable" > checks/flirble-http.inc
+	fi
+fi
+
+if [ -r sites/webhack.com/disable ] 
+then
+	echo "Mirror disabled" > checks/webhack-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://browsers.webhack.com/lastupdated.txt > checks/webhack-http.status
+	if [ "`grep 404 checks/webhack-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://browsers.webhack.com/lastupdated.txt > checks/webhack-http.inc
+	else
+		echo "Data unavailable" > checks/webhack-http.inc
+	fi
+fi
+
+if [ -r sites/gosume.com/disable ] 
+then
+	echo "Mirror disabled" > checks/gosume-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://browsers.gosume.com/browsers/lastupdated.txt > checks/gosume-http.status
+	if [ "`grep 404 checks/gosume-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://browsers.gosume.com/browsers/lastupdated.txt > checks/gosume-http.inc
+	else
+		echo "Data unavailable" > checks/gosume-http.inc
+	fi
+fi
+
+if [ -r sites/fuseware.com/disable ] 
+then
+	echo "Mirror disabled" > checks/fuseware-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://browsers.fuseware.com/lastupdated.txt > checks/fuseware-http.status
+	if [ "`grep 404 checks/fuseware-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://browsers.fuseware.com/lastupdated.txt > checks/fuseware-http.inc
+	else
+		echo "Data unavailable" > checks/fuseware-http.inc
+	fi
+fi
+
+# curl --silent --max-time 10 --connect-timeout 10 --head http://evolt.2dhosting.com/lastupdated.txt > checks/2dhosting-http.status
+# if [ "`grep 404 checks/2dhosting-http.status | grep HTTP`" = "" ] 
+# then
+# 	curl --silent --max-time 10 --connect-timeout 10 http://evolt.2dhosting.com/lastupdated.txt > checks/2dhosting-http.inc
+# else
+# 	echo "Data unavailable" > checks/2dhosting-http.inc
+# fi
+echo "Mirror closed" > checks/2dhosting-http.inc
+
+if [ -r sites/mirror.ac.uk/disable ] 
+then
+	echo "Mirror disabled" > checks/mirroracuk-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://download.mirror.ac.uk/mirror/ftp.evolt.org/lastupdated.txt > checks/mirroracuk-http.status
+	if [ "`grep 404 checks/mirroracuk-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://download.mirror.ac.uk/mirror/ftp.evolt.org/lastupdated.txt > checks/mirroracuk-http.inc
+	else
+		echo "Data unavailable" > checks/mirroracuk-http.inc
+	fi
+fi
+
+if [ -r sites/mirrorservice.org/disable ] 
+then
+	echo "Mirror disabled" > checks/mirrorservice-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://www.mirrorservice.org/sites/browsers.evolt.org/browsers/lastupdated.txt > checks/mirrorservice-http.status
+	if [ "`grep 404 checks/mirrorservice-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://www.mirrorservice.org/sites/browsers.evolt.org/browsers/lastupdated.txt > checks/mirrorservice-http.inc
+	else
+		echo "Data unavailable" > checks/mirrorservice-http.inc
+	fi
+fi
+
+if [ -r sites/evolt.winworldpc.com/disable ] 
+then
+	echo "Mirror disabled" > checks/evolt.winworldpc.com-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://evolt.winworldpc.com/lastupdated.txt > checks/evolt.winworldpc.com-http.status
+	if [ "`grep 404 checks/evolt.winworldpc.com-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://evolt.winworldpc.com/lastupdated.txt > checks/evolt.winworldpc.com-http.inc
+	else
+		echo "Data unavailable" > checks/evolt.winworldpc.com-http.inc
+	fi
+fi
+
+if [ -r sites/browsers-us.mirrors.zensoft.net/disable ] 
+then
+	echo "Mirror disabled" > checks/browsers-us.mirrors.zensoft.net-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://browsers-us.mirrors.zensoft.net/lastupdated.txt > checks/browsers-us.mirrors.zensoft.net-http.status
+	if [ "`grep 404 checks/browsers-us.mirrors.zensoft.net-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://browsers-us.mirrors.zensoft.net/lastupdated.txt > checks/browsers-us.mirrors.zensoft.net-http.inc
+	else
+		echo "Data unavailable" > checks/browsers-us.mirrors.zensoft.net-http.inc
+	fi
+fi
+
+if [ -r sites/browsers-fr.mirrors.zensoft.net/disable ] 
+then
+	echo "Mirror disabled" > checks/browsers-fr.mirrors.zensoft.net-http.inc
+else
+	curl --silent --max-time 10 --connect-timeout 10 --head http://browsers-fr.mirrors.zensoft.net/lastupdated.txt > checks/browsers-fr.mirrors.zensoft.net-http.status
+	if [ "`grep 404 checks/browsers-fr.mirrors.zensoft.net-http.status | grep HTTP`" = "" ] 
+	then
+		curl --silent --max-time 10 --connect-timeout 10 http://browsers-fr.mirrors.zensoft.net/lastupdated.txt > checks/browsers-fr.mirrors.zensoft.net-http.inc
+	else
+		echo "Data unavailable" > checks/browsers-fr.mirrors.zensoft.net-http.inc
+	fi
+fi

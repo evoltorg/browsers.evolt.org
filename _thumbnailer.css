@@ -1,0 +1,166 @@
+body {
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+body, div, table, td {
+	font-family: verdana, tahoma, arial, helvetica;
+	font-size: 11px;
+	color: #000000;
+}
+a, a:link, a:visited {
+	color: #062971;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+h1,  h2 {
+	font-family: trebuchet ms, arial, tahoma, verdana, helvetica;
+	font-weight: bold;
+}
+h1 {
+	font-size: 16px;
+	padding: 8px;
+	background: #E5EAF6;
+	border-bottom: 1px solid #C7D3EA;
+	margin: 0px;
+}
+p {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.Thumbnailed {
+	margin-top: 47px;
+}
+.BackToFilebrowser, .BackToFilebrowser:link, .BackToFilebrowser:visited, .BackToFilebrowser:hover {
+	position: absolute;
+	top: 13px;
+	left: 200px;
+	text-transform: lowercase;
+	text-decoration: underline;
+}
+.BackToFilebrowser, .BackToFilebrowser:link, .BackToFilebrowser:visited {
+	color: orange;
+}
+.BackToFilebrowser:hover {
+	color: #062971;
+}
+h2 {
+	font-size: 14px;
+}
+form { display: inline; }
+.Introduction {
+	border: 1px solid #F1E9DD;	
+	background: #FEFCF9;
+	padding: 10px;
+	margin: 20px;
+	line-height: 160%;
+}
+.Introduction a, .Introduction a:link, .Introduction a:visited {
+	text-decoration: underline;
+	color: orange;
+}
+.Introduction a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+.Body {
+	border-top: 1px solid #C7D3EA;	
+	border-bottom: 1px solid #C7D3EA;	
+	background: #f5f9ff;
+	float: left;
+	width: 100%;
+	
+}
+.CurrentFolder dt { display: none; }
+.CurrentFolder dd {
+	line-height: 28px;
+	color: #A3AFCD;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.CurrentFolder a, .CurrentFolder a:link, .CurrentFolder a:visited {
+	color: #A3AFCD;
+	text-decoration: underline;
+}
+.CurrentFolder a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.Container h2 {
+	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #C7D3EA;
+}
+.Container ul {
+	list-style: none;
+	display: inline;
+	margin: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 95%;
+	float: left;
+}
+.Container ul li {
+	padding: 3px;
+	display: block;
+	width: 150px;
+	overflow: hidden;
+	float: left;
+}
+
+.FileTable {
+	width: 400px;
+	margin: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.FileTable th {
+	xfont-family: trebuchet ms, arial, tahoma, verdana;
+	text-align: left;
+	xfont-size: 14px;
+	font-weight: bold;
+	xborder-bottom: 1px solid #C7D3EA;
+	background: #EBECFF;
+	padding-bottom: 2px;
+}
+.FileTable td {
+	padding-top: 3px;
+}
+.Images,
+.ThumbedImages {
+	float: left;
+}
+.ButtonContainer {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	clear: left;
+}
+.Button {
+	border: 1px solid #C7D3EA;
+	background: #EBECFF;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 4px;
+	padding-right: 5px;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: verdana;
+	width: 160px;
+}
+.Foot div {	color: #C7D3EA; }
+.Foot a, .Foot a:link, .Foot a:visited { color: #C7D3EA; }
+.Foot a:hover { color: #062971; }
+.Foot {
+	padding: 10px;
+	clear: left;
+}

@@ -1,3 +1,39 @@
+
+.donationHeader {
+  background-color: #c00000;
+  color: #000000;
+  font-size: 11px;
+}
+
+.donationHeader div {
+  background-color: #3c452c;
+  color: #c8cfc6;
+  font-size: 11px;
+}
+
+.donationHeader a:link, .donationHeader a:visited, .donationHeader a:hover, .don
+ationHeader a:active {
+  color: #FFCCCC;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.donationHeaderChartBG {
+  background-color: #9aa486;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.donationHeaderChartFG {
+  background-color: #ffffff;
+  color: #9aa486;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+
 body		{	background : #384F5C ;					/* BodyBackgroundColor , BodyBackgroundImage */
 			font-family : Verdana, Arial, Helvetica, sans-serif ;	/* BodyTextFace */
 			font-size : 12px ; 					/* BodyTextSize (include units) */
