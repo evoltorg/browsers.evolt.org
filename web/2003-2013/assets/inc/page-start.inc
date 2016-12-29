@@ -1,3 +1,0 @@
-<?php ?>
-<!doctype html>
-<html>
