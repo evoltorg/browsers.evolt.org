@@ -2,7 +2,7 @@
 // browserarchive.org aka browsers.evolt.org
 // Copyright (c) 1999-2013 Adrian Roselli, William Anderson
 ?>
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -48,25 +48,25 @@
 			<div id="address-block">
 				<ul>
 					<li><a href="http://evolt.org/colophon.html">Colophon</a></li>
-					<li class="smaller-gap"><a href="http://twitter.com/evolt_org" title="Twitter"><i class="icon-twitter"></i></a></li>
-					<li class="smaller-gap"><a href="https://plus.google.com/u/0/communities/114796678588081931900" title="Google+"><i class="icon-google-plus"></i></a></li>
-					<li class="smaller-gap"><a href="http://www.linkedin.com/groups?gid=1019497" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
-					<li class="smaller-gap"><a href="http://github.com/evoltorg" title="GitHub"><i class="icon-github"></i></a></li>
-					<li class="smaller-gap"><a href="http://www.flickr.com/groups/evolters/" title="Flickr"><i class="icon-flickr"></i></a></li>
+					<li class="smaller-gap"><a href="http://twitter.com/evolt_org" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li class="smaller-gap"><a href="https://plus.google.com/u/0/communities/114796678588081931900" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+					<li class="smaller-gap"><a href="http://www.linkedin.com/groups?gid=1019497" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+					<li class="smaller-gap"><a href="http://github.com/evoltorg" title="GitHub"><i class="fa fa-github"></i></a></li>
+					<li class="smaller-gap"><a href="http://www.flickr.com/groups/evolters/" title="Flickr"><i class="fa fa-flickr"></i></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 <?php
 	if ( $page_type == "splash" ) {
-		include "assets/inc/11-header-splash.inc"; 
+		include "assets/inc/11-header-splash.inc";
 ?>
 </header>
 <?php
-	} else { 
+	} else {
 ?>
 </header>
 <?php
 		include "assets/inc/12-header-page.inc";
-	} 
+	}
 ?>
