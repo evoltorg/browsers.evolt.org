@@ -10,6 +10,6 @@
   google_ad_height = 600;
   //-->
 </script>
-<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 <br /><a href="http://evolt.org/help_support_evolt/#google-ads">What's this?</a>
 </div>
