@@ -1,10 +1,14 @@
+# cruft
 .DS_Store
-archive/*
-beodl/mirrors*.csv*
-mirrors
-tmp
-mirrors
-old
 *.swp
 ~$*
 *~
+# local
+assets/css/*wesome*
+archivecount.inc
+archivesize.inc
+beodl/mirrors*.csv*
+mirrors/
+old/
+oldbeo/
+tmp/

@@ -1,13 +1,16 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors','1');
-include "assets/inc/functions.inc";
-// include "assets/inc/mysql.inc";
-include "assets/inc/page-start.inc";
-include "assets/inc/page-header.inc";
-include "assets/inc/menu-evolt.inc";
-include "assets/inc/page-content-open.inc";
+include "assets/inc/00-functions.inc";
+include "data.inc";
+$site_name = "browsers.evolt.org";
+$page_title = "browsers.evolt.org";
+$short_title = "Browser Archive";
+$page_type = "page";
+include "assets/inc/10-header.inc";
+include "assets/inc/20-message.inc";
 ?>
+<div class="wrapper">
+    <section id="content" class="full-width" role="main">
+    	<div class="p100">
 
 <?php
 
@@ -108,9 +111,7 @@ in touch</a>.
 </table>
 </p>
 
-
-<?php
-include "assets/inc/page-content-shut.inc";
-include "assets/inc/page-footer.inc";
-include "assets/inc/page-stop.inc";
+</div></section></div>
+<?
+include "assets/inc/99-footer.inc";
 ?>

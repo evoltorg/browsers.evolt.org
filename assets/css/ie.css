@@ -1,0 +1,8 @@
+/****************
+Microsoft, please, just STOP developing any kind of browsers. FOREVER
+--------------------------------------------------------- */
+#header nav ul.sub-menu { padding: 0 0 10px 0;  background: #111; }
+#header nav ul.sub-menu ul:before { border-right: 5px solid #111; }
+#header nav ul.sub-menu li:first-child { padding-top: 0px; }
+
+#content table.references td img { width: 120px;  }
