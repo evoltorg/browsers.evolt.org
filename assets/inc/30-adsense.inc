@@ -11,5 +11,5 @@
   //-->
 </script>
 <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-<br /><a href="http://evolt.org/help_support_evolt/#google-ads">What's this?</a>
+<br /><a href="http://evolt.org/help_support_evolt#google-ads">What's this?</a>
 </div>
